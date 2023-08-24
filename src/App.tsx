@@ -9,6 +9,7 @@ import Search from './screen/home/Search';
 import Add from './screen/home/Add';
 import Chatting from './screen/home/Chatting';
 import More from './screen/home/More';
+import Routers from './Routers';
 
 const Main = styled.div`
 `;
@@ -16,13 +17,8 @@ const Main = styled.div`
 function App() {
   return (
     <Main>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/search" element={<Search/>} />
-        </Routes>
-        <FootNav/>
-      </Router>
+      <Routers />
+      <FootNav/>
     </Main>
   );
 }
