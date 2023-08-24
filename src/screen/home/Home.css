@@ -1,4 +1,15 @@
 .main {
-    background-color: red;
-    
+    position: fixed;
+    left: 35%;
+    right: 35%;
+    width: 30%;
+    height: 100%;
+    overflow-y: scroll;
+    justify-items: center;
+    align-items: center;
+    background-color: #F9F9F9;
+}
+
+.main::-webkit-scrollbar {
+    display: none;
 }

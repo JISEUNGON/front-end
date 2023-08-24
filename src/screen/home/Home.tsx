@@ -4,7 +4,7 @@ import "./Home.css";
 function Main() {
   return (
     <div className="main">
-      <text>Main sd </text>
+      <text>Home</text>
     </div>
   );
 }
