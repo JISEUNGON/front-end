@@ -1,9 +1,10 @@
 import React from "react";
+import "./Home.css";
 
 function Main() {
   return (
-    <div>
-      <text>Main</text>
+    <div className="main">
+      <text>Main sd </text>
     </div>
   );
 }

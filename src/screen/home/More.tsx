@@ -3,7 +3,7 @@ import React from "react";
 function More() {
   return (
     <div>
-      <text>More</text>
+      <text>More asd</text>
     </div>
   );
 }
