@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import FootNav from './navigation/FootNav';
 import styled from "styled-components";
