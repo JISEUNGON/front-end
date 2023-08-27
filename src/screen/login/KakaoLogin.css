@@ -7,11 +7,67 @@
     overflow-y: scroll;
     justify-items: center;
     align-items: center;
-    background-color: #F9F9F9;
+    background-color: #FFF;
     flex-direction: column;
-    display: flex;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.55);
 }
 
 .main::-webkit-scrollbar {
     display: none;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight:700;
+    margin-top: 80px;
+    margin-left: 24px;
+}
+
+p {
+    font-family: 'Pretendard';
+    color: #8D8D8D;
+    margin-left: 24px;
+}
+
+#login_img {
+    width: 60%;
+    height: 40%;
+    margin-top: 30%;
+    margin-right: 24px;
+    float: right;
+}
+
+#kakao_login {
+    width: 80%;
+    height: 6%;
+    margin-left: 10%;
+    bottom: 19%;
+    position: absolute;
+}
+
+#google_login {
+    width: 82%;
+    height: 6%;
+    margin-left: 9%;
+    bottom: 12%;
+    position: absolute;
+}
+
+#or {
+    font-family: 'Pretendard';
+    font-size: 12px;
+    position: absolute;
+    bottom: 8%;
+    left: 20%;
+    color: #8D8D8D;
+}
+
+#else {
+    font-family: 'Pretendard';
+    font-size: 13px;
+    font-weight: 700;
+    bottom: 8%;
+    position: absolute;
+    left: 31%;
+    color: #656565;
 }
