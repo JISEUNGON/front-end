@@ -23,8 +23,9 @@ const KakaoCallback = () => {
     }, [navigate])
     
     return(
-        <>
-        </>
+        <div>
+            <p>카카오 로그인 콜백</p>
+        </div>
     )
 }
 export default KakaoCallback;

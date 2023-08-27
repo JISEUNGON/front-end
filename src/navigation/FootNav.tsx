@@ -19,10 +19,6 @@ const ChattingButton = styled.div``
 
 const MoreButton = styled.div``
 
-const StyledLink = styled(RouterLink)`
-  backgroud-color: transparent;
-`;
-
 function FootNav() {
   const [activeNav, setActiveNav] = useState(1);
 
