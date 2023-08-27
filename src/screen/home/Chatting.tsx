@@ -1,9 +1,10 @@
 import React from "react";
+import "./Chatting.css";
 
 function Chatting() {
   return (
     <div className="main">
-      <text>Chatting</text>
+      <p>Chatting</p>
     </div>
   );
 }

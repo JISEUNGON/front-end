@@ -1,10 +1,10 @@
 import React from "react";
+import "./Search.css";
 
 function Search() {
   return (
     <div className="main">
-      <img src="/images/home/dunji_logo.png" alt="logo" width="89px" height="79px"/>
-      <text>Search</text>
+      <p>search</p>
     </div>
   );
 }

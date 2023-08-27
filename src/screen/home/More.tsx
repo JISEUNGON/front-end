@@ -1,9 +1,10 @@
 import React from "react";
+import "./More.css";
 
 function More() {
   return (
     <div className="main">
-      <text>More asd</text>
+      <p>More asd</p>
     </div>
   );
 }

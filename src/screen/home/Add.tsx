@@ -4,7 +4,7 @@ import "./Add.css";
 function Add() {
   return (
     <div className="main">
-      <text>Add</text>
+      <button onClick={() => {window.localStorage.clear()}}>clear</button>
     </div>
   );
 }
