@@ -157,7 +157,7 @@ function More() {
     if (info == null) {
       navigate('/login/kakao');
     }
-  },[]);
+  },[navigate]);
 
   return (
     <Container className="main">

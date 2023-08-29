@@ -1,4 +1,4 @@
-import React, { useEffect, useState,useContext } from "react";
+import React, { useEffect, useState } from "react";
 import { LoginResponseDto } from "../../dto/response/login/LoginResponseDto";
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
@@ -20,7 +20,7 @@ function Main() {
       navigate('/login/kakao');
     }
 
-  }, [])
+  }, [navigate])
   
   return (
     <div className="main">

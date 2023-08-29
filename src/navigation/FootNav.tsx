@@ -35,7 +35,7 @@ function FootNav() {
     console.log(activeNav);
   }, [activeNav]);
 
-  if (location.pathname == "/login/kakao" || location.pathname == "/login/kakao/callback") {
+  if (location.pathname === "/login/kakao" || location.pathname === "/login/kakao/callback") {
     return null;
   }
 

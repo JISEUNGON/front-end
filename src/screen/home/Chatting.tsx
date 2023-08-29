@@ -16,7 +16,7 @@ function Chatting() {
     if (info == null) {
       navigate('/login/kakao');
     }
-  },[]);
+  },[navigate]);
 
   return (
     <div className="main">
