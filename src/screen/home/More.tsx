@@ -5,6 +5,9 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { PiHouseSimpleLight,PiHeartStraightLight, PiChatCenteredDotsLight } from "react-icons/pi";
 import { CiCircleCheck } from "react-icons/ci";
 import { styled } from "styled-components";
+import { useEffect } from "react";
+import { LoginResponseDto } from "../../dto/response/login/LoginResponseDto";
+import { useNavigate } from "react-router-dom";
 
 const Container = styled.div`
 `;
@@ -143,6 +146,19 @@ font-family: 'Pretendard';
 `;
 
 function More() {
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const userInfo = window.localStorage.getItem("userInfo");
+
+    const info : LoginResponseDto = JSON.parse(userInfo as string);
+
+    if (info == null) {
+      navigate('/login/kakao');
+    }
+  },[]);
+
   return (
     <Container className="main">
       <TopDiv className="share_div">
