@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useContext } from "react";
 import { LoginResponseDto } from "../../dto/response/login/LoginResponseDto";
 import "./Home.css";
+import { useNavigate } from "react-router-dom";
 
 function Main() {
   const [info, setInfo] = useState<LoginResponseDto | null>(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const userInfo = window.localStorage.getItem("userInfo");
@@ -13,6 +15,11 @@ function Main() {
     setInfo(info);
 
     console.log(info);
+
+    if (info == null) {
+      navigate('/login/kakao');
+    }
+
   }, [])
   
   return (

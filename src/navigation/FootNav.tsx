@@ -7,7 +7,7 @@ import { BsFillPersonFill, BsPerson } from "react-icons/bs";
 import { GoHome, GoHomeFill } from "react-icons/go";
 import { PiWechatLogoLight, PiWechatLogoFill } from "react-icons/pi";
 import styled from "styled-components";
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink,useLocation } from "react-router-dom";
 
 const BottomNav = styled.nav``
 
@@ -22,6 +22,8 @@ const ChattingButton = styled.div``
 const MoreButton = styled.div``
 
 function FootNav() {
+  const location = useLocation();
+
   const [activeNav, setActiveNav] = useState(1);
 
   const handleActiveNav = (nav: number) => {
@@ -32,6 +34,10 @@ function FootNav() {
   useEffect(() => {
     console.log(activeNav);
   }, [activeNav]);
+
+  if (location.pathname == "/login/kakao" || location.pathname == "/login/kakao/callback") {
+    return null;
+  }
 
   return (
     <BottomNav className="wrapper">

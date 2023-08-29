@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useEffect } from "react";
+import { useEffect,useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
 const KakaoCallback = () => {
@@ -14,14 +14,13 @@ const KakaoCallback = () => {
         .then((response) => {
             console.log(response);
             localStorage.setItem("userInfo", JSON.stringify(response.data));
-            
-            navigate("/");
+            navigate("/")
         })
         .catch((error) => {
             console.log(error);
         });
-    }, [navigate])
-    
+    },[navigate]);
+
     return(
         <div>
             <p>카카오 로그인 콜백</p>
