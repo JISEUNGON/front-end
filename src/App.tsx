@@ -17,7 +17,7 @@ function App() {
   return (
     <Main>
       <Routers />
-      {!["/univ/signup/input", "/univ/signup/verify"].includes(location.pathname) && <FootNav />}
+      {!["/univ/signup/input", "/univ/signup/verify", "/univ/signup/verify/code"].includes(location.pathname) && <FootNav />}
     </Main>
   );
 }

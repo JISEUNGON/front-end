@@ -10,6 +10,7 @@ import Interest from "./screen/home/Interest";
 import FabNav from "./navigation/FabNav";
 import UnivInput from "./screen/login/signup/univ/UnivInput";
 import UnivVerify from "./screen/login/signup/univ/UnivVerify";
+import UnivVerifyCode from "./screen/login/signup/univ/UnivVerifyCode";
 
 function Routers () {
     return (
@@ -25,6 +26,7 @@ function Routers () {
                 <Route path="/float" element={<FabNav />} />
                 <Route path="/univ/signup/input" element={<UnivInput />} />
                 <Route path="/univ/signup/verify" element={<UnivVerify />} />
+                <Route path="/univ/signup/verify/code" element={<UnivVerifyCode universityName="한양대" universityEmail="@hanyang.ac.kr" />} />
             </Routes>
     );
 }
