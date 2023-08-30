@@ -14,7 +14,7 @@ const KakaoCallback = () => {
         .then((response) => {
             console.log(response);
             localStorage.setItem("userInfo", JSON.stringify(response.data));
-            navigate("/")
+            navigate("/univ/signup/input")
         })
         .catch((error) => {
             console.log(error);
@@ -22,8 +22,8 @@ const KakaoCallback = () => {
     },[navigate]);
 
     return(
-        <div>
-            <p>카카오 로그인 콜백</p>
+        <div className="callback" style={{display: "flex", background: "red", position: "fixed", left: "35%", right: "35%", width: "30%", height: "100%", justifyContent: "center" , alignItems: "center", backgroundColor: "#16F1BD"}}>
+            <img src="/images/login/logo.png" alt="logo" style={{marginBottom: "50%"}}/>
         </div>
     )
 }
